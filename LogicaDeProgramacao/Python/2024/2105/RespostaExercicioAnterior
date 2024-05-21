@@ -1,0 +1,50 @@
+"""
+Correção do exercicios anteriores de Exercicios relacionado a APIs
+"""
+"""
+1.
+
+
+
+from os import system
+import requests
+
+def requisicao(cep):
+    #Obtém um arquivo json atrávez de uma requisição
+    req = requests.get(f'https://viacep.com.br/ws/{cep}/json') #Faz uma requisição no link informado
+    return req.json() # Converte essa requisição em um arquivo json
+
+if __name__ == '__main__':
+    system('cls') # Limpa a tela
+    cep = input('\nInforme um cep:') # obtem a entrada do teclado do usuario
+    info_cep = requisicao(cep) # guarda o retorno da função
+    for chave in info_cep.keys(): # executar um laço for em todas as chaves do arquivo json
+        print(f'{chave} : {info_cep[chave]}')#Printa a chave e seu valor
+
+"""
+
+"""
+2.
+
+"""
+
+from os import system # importa funções do sistema operacional
+import requests # importa função de requisição
+from datetime import date # bibilioteca de dados relacionado ao tempo
+
+def taxa_dolar():
+    req = requests.get('https://economia.awesomeapi.com.br/last/USD-BRL')#Obtem a requisição do arquivo json
+    return float(req.json()['USDBRL']['high']) # Obtem o valor dentro da chave 'USDBRL' na subchave 'High' do JSON e depois converter em numero flutuante
+    
+if __name__ == '__main__' :
+    #Função principal
+    taxa = taxa_dolar()# Chamar a função criada retornando taxa
+    data = date.today() #Função que fornece a data atual data.day / data.month / data.year
+    print(f'\n{data.day}/{data.month}/{data.year}')
+    print(f'Taxa do dolar: R${round(taxa,2)}')
+    real = float(input('\nInforme qtde em Real: R$'))
+    print(f'R${real} equivale U${round((real/taxa),2)}')
+
+
+
+
