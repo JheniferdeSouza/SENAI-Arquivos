@@ -6,6 +6,7 @@ def adiciona_na_lista(item,lista):
     return lista
 
 def busca_na_lista(item,lista):
+    #Busca na lista usando uma função nativa
     i = lista.index(item)
     return i
 
