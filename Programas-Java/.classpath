@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Aula05ContaBancaria/src/main/java"/>
+	<classpathentry kind="src" path="Aula30/src/main/java"/>
+	<classpathentry kind="src" path="MercadinhoGosling/src/main/java"/>
+	<classpathentry kind="src" path="ProgramaSemente/src/main/java"/>
+	<classpathentry kind="src" path="ProgramaSementes/src/main/java"/>
+	<classpathentry kind="src" path="ProgramLive/src/main/java"/>
+	<classpathentry kind="src" path="Test/src/main/java"/>
+	<classpathentry kind="lib" path="ProgramaSementes/target/original-ProgramaSementes-1.0-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="ProgramaSementes/target/ProgramaSementes-1.0-SNAPSHOT.jar"/>
+	<classpathentry kind="output" path="Aula05ContaBancaria/target/classes"/>
+</classpath>

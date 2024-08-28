@@ -1,0 +1,30 @@
+*Quando maior o modo maior a chance de cair o que vai acaba com o player;
+* lógica melhor se um numero for maior ganhou, se um numero for menor Perdeu, se um numero for igual empatou;
+*dama - criar um quadrado 10x10 e detecta onde o jogador cliclou
+*jogo da cobrinha
+*Jogo da velha
+*Tetriz
+*Bolinha quebra platforma
+0 - pedra
+1 - papel
+
+o -papel
+1- pedra
+
+result = aI(choicePlayer);
+static byte Decision(int choosenIA){
+        return resultFinally;
+    }
+
+o pedra 2 tesoura 1 papel
+
+1 ganhou o e perdeu 2 
+2 ganhou 1 e perde 0
+
+jogador jogar 1 fica empatado - 3
+jogador jogar 2 perde 1
+jogador jogar o ganhar o
+
+0 - jogadr
+1- maquina
+3-empate
